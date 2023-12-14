@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="..." crossorigin="anonymous">
+  <title>XGroup 6_Q2_lifelabs ipba</title>
+  <!-- Bootstrap CSS -->
+ <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Styles for the fixed header */
+    .fixed-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #36454F;
+      padding: 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Styles for the navigation links */
+   .navigation-links {
+  display: flex;
+  align-items: center; /* Align links vertically */
+}
+
+.navigation-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px; /* Set a specific font size */
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 700;
+  margin: 0 10px; /* Add equal margin around each link */
+  padding: 8px 15px; /* Add padding to increase clickable area */
+  border-radius: 5px;
+  transition: color 0.5s ease;
+    }
+
+    /* Updated styles for selected link */
+    .navigation-links a.active,
+    .navigation-links a:hover {
+      color: orange
+    }
+
+    /* Styles for the body content */
+    .body-content {
+      margin-top: 80px;
+      padding: 0;
+      background-color: white;
+    }
+
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }
+
+    /* Back-to-Top button styles */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #36454F;
+      color: white;
+      cursor: pointer;
+    }
+
+/* Styles for the Order link */
+.navigation-links a.order-link {
+  background-color: #634832;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+ .footer h5 {
+    color: #fff; /* Footer column title color */
+    margin-bottom: 15px;
+  }
+
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer ul li a {
+    color: #ccc; /* Footer link color */
+    text-decoration: none;
+  }
+
+  .footer ul li a:hover {
+    color: orange; /* Footer link color on hover */
+  }
+
+  </style>
+</head>
+<body>
+
+<!-- Fixed Header -->
+<div class="fixed-header">
+  <a href="index.html">   
+    <img src="https://drive.google.com/uc?id=1uIOApVJMkumPvaGUViZ5yEdIy8XfWm6m" alt="sip-sip hooray logo" style="max-height: 80px; max-width: 100%;">
+  </a>
+  <!-- Navigation Links (aligned to top right corner) -->
+  <div class="navigation-links">
+    <a href="index.html" onclick="loadPage('index.html')">HOME</a>
+    <a href="about.html" onclick="loadPage('about.html')">ABOUT</a>
+    <a href="service.html" onclick="loadPage('service.html')">SERVICE</a>
+    <a href="contacts.html" onclick="loadPage('contacts.html')">CONTACTS</a>
+    <a href="contacts.html" class="order-link" onclick="loadPage('contacts.html')">ORDER</a> 
+    <!-- Add more links for other pages -->
+    <!-- Add more links for other pages -->
+  </div>
+</div>
+
+<!-- Body Content -->
+<div class="body-content">
+  <!-- Wooden Table Image with reduced height -->
+  <img src="https://drive.google.com/uc?id=1TI7QjFkZyg9VeHiy7yELNyeRKfwwOxRc" class="wooden-table-image" alt="wooden background" style="width: 100%; height: calc(80vh - 80px); object-fit: cover;">
+  </div>
+
+<!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fas fa-user-tie fa-3x text-primary mb-4"></i>
+                                <h5>Professional Barista</h5>
+                                <p>Behind every great coffee experience stands a proficient barista, blending technique and artistry to transform beans into a symphony of flavors that captivate the senses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fas fa-3x fa-coffee text-primary mb-4"></i>
+                                <h5>Quality Coffee</h5>
+                                <p>If there's a skilled barista , you can anticipate nothing short of an exceptional cup of coffee. Their expertise turns every brew into a masterpiece of flavor and satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fas fa-3x fa-thumbs-up text-primary mb-4"></i>
+                                <h5>Personalized Brews</h5>
+                                <p> Seeking your perfect coffee match? Allow us to recommend personalized coffee blends based on your preferences, making sure each sip brings you joy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fas fa-3x fa-heart text-primary mb-4"></i>
+                                <h5>24/7Quality Service</h5>
+                                <p>In Sip-Sip Hooray, We'd like to asure you that your coffee will be served with love and care,in order for you to have an experience like no other</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+ 
+
+
+
+  <!-- Back-to-Top Button -->
+  <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+</div>
+
+<!-- Footer -->
+<footer class="footer mt-5 py-3 bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <!-- Column 1: Company -->
+      <div class="col-md-3">
+        <h5>Company</h5>
+        <ul class="list-unstyled">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="service.html">Our Services</a></li>
+          <li><a href="contacts.html">Reservation</a></li>
+        </ul>
+      </div>
+       <div class="col-md-3">
+        <h5>Contact</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-map-marker-alt me-2"></i>123 kalumpang, Marikina, Philippines</li>
+          <li><i class="fas fa-phone-alt me-2"></i>+012 345 67890</li>
+          <li><i class="fas fa-envelope me-2"></i>info@example.com</li>
+        </ul>
+        <div class="d-flex pt-2">
+          <a class="btn btn-outline-light btn-social me-1" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-social me-1" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social me-1" href="#"><i class="fab fa-youtube"></i></a>
+          <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <!-- Column 3: Schedule -->
+      <div class="col-md-3">
+        <h5>Schedule</h5>
+        <ul class="list-unstyled">
+          <li>Monday - Friday: 9AM - 6PM</li>
+          <li>Saturday: 10AM - 4PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+      <!-- Column 4: Empty -->
+      <div class="col-md-3">
+        <!-- This column can be left empty or filled with additional content -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JavaScript (jQuery and Popper.js) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    
+
+
+    // Show/hide back-to-top button on scroll
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 200) {
+        $('.back-to-top').fadeIn();
+      } else {
+        $('.back-to-top').fadeOut();
+      }
+    });
+
+    // Add active class to clicked link and remove from others
+    $('.navigation-links a').click(function(){
+      $('.navigation-links a').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    // Highlight the active link when a new page is loaded
+    var currentUrl = window.location.href;
+    $('.navigation-links a').removeClass('active');
+    $('.navigation-links a[href="'+currentUrl+'"]').addClass('active');
+  });
+
+  // Function to load pages into iframe with a loading screen
+  function loadPage(pageUrl) {
+    $('.loading-screen').show();
+
+    setTimeout(function() {
+      $('#pageFrame').attr('src', pageUrl);
+      $('.loading-screen').hide();
+    }, 1000);
+  }
+
+  // Function to scroll to the top of the page
+  function scrollToTop() {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    return false;
+  }
+
+
+  $(document).ready(function(){
+    // Highlight the active link when the page loads
+    var currentUrl = window.location.href;
+    $('.navigation-links a').removeClass('active');
+    $('.navigation-links a[href="'+currentUrl+'"]').addClass('active');
+
+    // Additional code to specifically set the 'active' class for the HOME link
+    if (currentUrl.includes('service.html')) {
+      $('.navigation-links a[href="service.html"]').addClass('active');
+    }
+  });
+</script>
+
+</body>
+</html>
